@@ -58,4 +58,41 @@ describe("Directives test cases", () => {
       ).not.toBeInTheDocument();
     });
   });
+
+  describe("Dynamic bindings", () => {
+    xit("should dynamically apply and remove the class from the element", async () => {
+      const { getByText, getByLabelText } = render(Directives);
+
+      // no value for `indent` has been set, so no class should be present
+      expect(getByText(/Color me surprised/i)).not.toHaveClass("colored");
+
+      const spacesRadio = getByLabelText(/spaces/i);
+      await fireEvent.click(spacesRadio);
+
+      expect(getByText(/Color me surprised/i)).toHaveClass("colored");
+    });
+
+    xit("should dynamically set the disabled value on the button", async () => {
+      const { getByText, getByLabelText } = render(Directives);
+
+      expect(getByText(/Click me if you can/i)).not.toBeDisabled();
+
+      const answerInput = getByLabelText(/show the answer/i);
+      await fireEvent.click(answerInput);
+
+      expect(getByText(/Click me if you can/i)).toBeDisabled();
+    });
+  });
+
+  describe("Event bindigns", () => {
+    it("should increment the count properly", async () => {
+      const { getByText } = render(Directives);
+
+      const button = getByText(/Don't push!/i);
+      await fireEvent.click(button);
+      await fireEvent.click(button);
+
+      getByText(/times clicked: 2/i);
+    });
+  });
 });
