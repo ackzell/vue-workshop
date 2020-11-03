@@ -3,18 +3,21 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld />
     <Directives />
+    <Methods />
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import Directives from "./components/Directives.vue";
+import Methods from "./components/Methods.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
-    Directives
+    Directives,
+    Methods
   }
 };
 </script>
