@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld />
-    <Directives />
-    <Methods />
+    <!-- <HelloWorld /> -->
+    <!-- <Directives /> -->
+    <!-- <Methods /> -->
+    <!-- <ComputedProperties /> -->
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Directives from "./components/Directives.vue";
 import Methods from "./components/Methods.vue";
+import ComputedProperties from "./components/ComputedProperties.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
     Directives,
-    Methods
+    Methods,
+    ComputedProperties
   }
 };
 </script>
