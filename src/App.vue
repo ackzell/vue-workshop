@@ -4,7 +4,7 @@
     <!-- <HelloWorld /> -->
     <!-- <Directives /> -->
     <!-- <Methods /> -->
-    <!-- <ComputedProperties /> -->
+    <ComputedProperties />
   </div>
 </template>
 

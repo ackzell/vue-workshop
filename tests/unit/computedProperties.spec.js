@@ -13,4 +13,17 @@ describe("Computed Properties tests", () => {
     await input.setValue("Axel");
     expect(output.text()).toContain("lexA");
   });
+
+  xit("should keep the original data variable ", async () => {
+    const wrapper = mount(ComputedProperties);
+    const result = wrapper
+      .find('[data-testid="reversed-beverages"]')
+      .text()
+      .replace(/\n|\t|\s/gi, "");
+    const expectedResult = JSON.stringify(["🧉", "🥛", "🧃", "🥤"]);
+    expect(result).toBe(expectedResult);
+
+    const originalArray = wrapper.vm.myBeverages;
+    expect(originalArray).toEqual(["🥤", "🧃", "🥛", "🧉"]);
+  });
 });
