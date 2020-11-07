@@ -4,7 +4,8 @@
     <!-- <HelloWorld /> -->
     <!-- <Directives /> -->
     <!-- <Methods /> -->
-    <ComputedProperties />
+    <!-- <ComputedProperties /> -->
+    <Watchers />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import Directives from "./components/Directives.vue";
 import Methods from "./components/Methods.vue";
 import ComputedProperties from "./components/ComputedProperties.vue";
+import Watchers from "./components/Watchers.vue";
 
 export default {
   name: "App",
@@ -20,7 +22,8 @@ export default {
     HelloWorld,
     Directives,
     Methods,
-    ComputedProperties
+    ComputedProperties,
+    Watchers
   }
 };
 </script>
