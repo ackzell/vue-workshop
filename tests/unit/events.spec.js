@@ -4,11 +4,11 @@ import Child from "@/components/Events/Child";
 
 describe("Events tests", () => {
   describe("Parent component tests", () => {
-    it("should have the `Child` component registered", async () => {
+    xit("should have the `Child` component registered", async () => {
       expect(Parent.components.Child).toBeDefined();
     });
 
-    it("should implement the `Child` component", async () => {
+    xit("should implement the `Child` component", async () => {
       const wrapper = mount(Parent);
       const childComponent = wrapper.findComponent(Child);
       expect(childComponent.exists()).toBe(true);
@@ -16,13 +16,13 @@ describe("Events tests", () => {
   });
 
   describe("Child component tests", () => {
-    it("should emit an event `the-event` when clicking on the button", async () => {
+    xit("should emit an event `the-event` when clicking on the button", async () => {
       const wrapper = mount(Child);
       await wrapper.find("button").trigger("click");
       expect(wrapper.emitted()["the-event"]).toBeTruthy();
     });
 
-    it("should emit an event `the-event` and send a payload when clicking on the button", async () => {
+    xit("should emit an event `the-event` and send a payload when clicking on the button", async () => {
       const wrapper = mount(Child);
       await wrapper.find("button").trigger("click");
       expect(wrapper.emitted()["the-event"][0]).not.toEqual([]);
@@ -30,7 +30,7 @@ describe("Events tests", () => {
   });
 
   describe("Parent AND Child component tests", () => {
-    it("should capture the event from the Child in the Parent", async () => {
+    xit("should capture the event from the Child in the Parent", async () => {
       const spy = jest.spyOn(Parent.methods, "onChildEventCaught");
       const wrapper = mount(Parent);
       const childComponent = wrapper.findComponent(Child);
