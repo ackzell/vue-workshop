@@ -5,7 +5,8 @@
     <!-- <Directives /> -->
     <!-- <Methods /> -->
     <!-- <ComputedProperties /> -->
-    <Watchers />
+    <!-- <Watchers /> -->
+    <Parent />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import Directives from "./components/Directives.vue";
 import Methods from "./components/Methods.vue";
 import ComputedProperties from "./components/ComputedProperties.vue";
 import Watchers from "./components/Watchers.vue";
+import Parent from "./components/Events/Parent";
 
 export default {
   name: "App",
@@ -23,7 +25,8 @@ export default {
     Directives,
     Methods,
     ComputedProperties,
-    Watchers
+    Watchers,
+    Parent
   }
 };
 </script>

@@ -10,7 +10,8 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "vue/no-unused-components": "off",
+    "vue/no-unused-components": "warn",
+    "no-unused-vars": "warn",
     // turning it off to prove a point, this *SHOULD NOT BE TURNED OFF IN REAL LIFE*
     "vue/no-side-effects-in-computed-properties": "off",
   },
