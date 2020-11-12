@@ -6,17 +6,19 @@
     <!-- <Methods /> -->
     <!-- <ComputedProperties /> -->
     <!-- <Watchers /> -->
-    <Parent />
+    <!-- <Parent /> -->
+    <LifecycleHooks />
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import Directives from "./components/Directives.vue";
-import Methods from "./components/Methods.vue";
-import ComputedProperties from "./components/ComputedProperties.vue";
-import Watchers from "./components/Watchers.vue";
+import Directives from "./components/Directives";
+import Methods from "./components/Methods";
+import ComputedProperties from "./components/ComputedProperties";
+import Watchers from "./components/Watchers";
 import Parent from "./components/Events/Parent";
+import LifecycleHooks from "./components/LifecycleHooks/LifecycleHooks";
 
 export default {
   name: "App",
@@ -26,7 +28,8 @@ export default {
     Methods,
     ComputedProperties,
     Watchers,
-    Parent
+    Parent,
+    LifecycleHooks
   }
 };
 </script>
