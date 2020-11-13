@@ -44,6 +44,6 @@ export default {
 <style scoped>
 div {
   padding: 10px;
-  border: 1px dotted tomato;
+  border: 2px dashed tomato;
 }
 </style>

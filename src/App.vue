@@ -7,7 +7,8 @@
     <!-- <ComputedProperties /> -->
     <!-- <Watchers /> -->
     <!-- <Parent /> -->
-    <LifecycleHooks />
+    <!-- <LifecycleHooks /> -->
+    <!-- <Slots /> -->
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import ComputedProperties from "./components/ComputedProperties";
 import Watchers from "./components/Watchers";
 import Parent from "./components/Events/Parent";
 import LifecycleHooks from "./components/LifecycleHooks/LifecycleHooks";
+import Slots from "./components/Slots/Slots";
 
 export default {
   name: "App",
@@ -29,7 +31,8 @@ export default {
     ComputedProperties,
     Watchers,
     Parent,
-    LifecycleHooks
+    LifecycleHooks,
+    Slots
   }
 };
 </script>

@@ -41,6 +41,6 @@ export default {
 </script>
 <style scoped>
 div {
-  border: 1px dotted tomato;
+  border: 2px dashed tomato;
 }
 </style>
