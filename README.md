@@ -27,7 +27,12 @@ The idea with this repo is that you have a Vue app with different sections which
    -  xit("should bind the `name` properly", async () => {
    +  it("should bind the `name` properly", async () => {
    ```
+1. Edit `/src/App.vue` and uncomment the tag for the component you want to work with, in our case `<HelloWorld />` should be uncommented.
 1. Go into the `/src/components/HelloWorld.vue` file and implement the proper code according to the instructions found in the comments of the file.
 1. Visit http://localhost:8080/ and there you will find your app running.
 
 Once you fix the Vue code (in the components folder) your tests will pass and the application on the browser window will behave as intended!
+
+## There is a video walk-through if you want to watch it:
+[![Watch the video](https://img.youtube.com/vi/4od60NCMqKw/default.jpg)](https://youtu.be/4od60NCMqKw)
+
